@@ -9,8 +9,8 @@
         <h3 >@<%= post.username %></h3>
         <h3 >Content :- <%= post.content %></h3>
         <div class="side1">
-        <a href="http://localhost:9990/posts/<%=post.id%>">See in detail</a>
-        <a href="http://localhost:9990/posts/<%=post.id%>/edit">Edit</a>
+        <a href="/posts/<%=post.id%>">See in detail</a>
+        <a href="/posts/<%=post.id%>/edit">Edit</a>
         <form action="/posts/<%=post.id%>?_method=DELETE" method="post">
         <button  class="btn btn-outline-danger">Delete post</button>
         </form>
@@ -21,8 +21,8 @@
     <br>
     <br>
     <div class="side">
-   <button  class="btn btn-outline-danger"><a href="http://localhost:9990/posts/new">Create new post</a></button>
-    <button  class="btn btn-outline-danger"><a href="http://localhost:9990/logout">Log out</a></button>
+   <button  class="btn btn-outline-danger"><a href="/posts/new">Create new post</a></button>
+    <button  class="btn btn-outline-danger"><a href="/logout">Log out</a></button>
 
    </div>
     <!-- <script src="/js/main.js"></script> -->
