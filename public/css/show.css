@@ -1,0 +1,10 @@
+h2{
+    transform: translateY(100px);
+    text-align: center;
+    color:rgb(129, 4, 4) ;
+    margin-top: 25px;
+}
+
+.post{
+    height: 200px;
+}

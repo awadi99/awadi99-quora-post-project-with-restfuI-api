@@ -1,0 +1,19 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<%-include('include/header.ejs')%>
+<link rel="stylesheet" href="/css/edit.css">
+<body>
+    <h2>Edit your post</h2>
+
+
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+    <div class="info">
+    <p>Post id: <%=post.id %> </p>
+    <p>Post username: <%=post.username%></p>
+    </div>
+        <textarea placeholder="write your post" name ="content"><%=post.content%></textarea>
+         <br>
+        <br>
+        <button class="btn btn-outline-danger">Submit</button>
+    </form>
+</body>
+</html>
