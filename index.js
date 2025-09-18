@@ -41,6 +41,9 @@ let posts =[
     }
 ]
 
+app.get('/', (req, res) => {
+    res.redirect('/posts');
+});
 
 // index main
 app.get('/posts',(req,res)=>{
